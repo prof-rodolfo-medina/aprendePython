@@ -1,6 +1,9 @@
 def elimina_duplicados_old_fashioned(lista):
     """
     Elimina los elementos duplicados de una lista de forma tradicional.
+
+    :param lista: Lista de elementos que pueden contener duplicados.
+    :return: Lista sin elementos duplicados.
     """
     lista_sin_duplicados = []
     for elemento in lista:

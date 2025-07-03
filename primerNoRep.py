@@ -1,7 +1,14 @@
 def primer_caracter_no_repetido( s:str) -> str | None:
-    """
-    Devuelve el primer caracter no repetido en la cadena s.
-    Si no hay caracteres no repetidos, devuelve una cadena vacía.
+    """ 
+    Encuentra el primer caracter no repetido en una cadena de caracteres.
+    Esta función recorre la cadena de caracteres y utiliza un diccionario
+    para contar la frecuencia de cada caracter. Luego, busca el primer 
+    caracter que tiene una frecuencia de 1, lo que indica que es no repetido.
+    Si no se encuentra ningún caracter no repetido, devuelve None.
+
+    :param s: Cadena de caracteres en la que se buscará el primer caracter no repetido.
+    :return: El primer caracter no repetido en la cadena s, o None si no
+    se encuentra ninguno.
     """
     contador = {}
     

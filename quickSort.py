@@ -1,4 +1,10 @@
 def quicksort(arr):
+    """    
+    Ordena una lista utilizando el algoritmo QuickSort de manera recursiva.
+    
+    :param arr: Lista de elementos a ordenar.
+    :return: Lista ordenada.
+    """
     if len(arr) <= 1:
         return arr
     pivot = arr[len(arr) // 2]

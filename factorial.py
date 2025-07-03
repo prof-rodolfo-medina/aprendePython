@@ -1,4 +1,13 @@
 def factorial(n):
+    """    
+    Calcula el factorial de un número entero no negativo.
+
+    :param n: Número entero no negativo del cual se desea calcular el factorial.
+    :return: El factorial de n.
+    :raises ValueError: Si n es negativo.
+    :raises TypeError: Si n no es un entero.
+    """
+
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers")
     elif n == 0 or n == 1:

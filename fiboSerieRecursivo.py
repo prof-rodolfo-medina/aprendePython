@@ -1,6 +1,10 @@
 def fibonacci_serie(n, serie=None):
     """
     Genera la serie de Fibonacci de longitud n de manera recursiva.
+    
+    :param n: Longitud de la serie de Fibonacci a generar.
+    :param serie: Lista que contiene la serie de Fibonacci generada hasta el momento.   
+    :return: Lista con la serie de Fibonacci de longitud n.
     """
     if serie is None:
         serie = []
