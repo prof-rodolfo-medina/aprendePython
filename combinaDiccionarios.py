@@ -8,10 +8,12 @@ def combina_diccionarios(d1,d2):
     """
     resultado = d1.copy()  # Copia el primer diccionario
     for clave, valor in d2.items():
-        if clave in resultado:
-            resultado[clave] += valor  # Suma los valores si la clave ya existe
-        else:
-            resultado[clave] = valor  # Añade la nueva clave y su valor
+        resultado[clave] = resultado.get(clave, 0) + valor  # Suma los valores de las claves comunes
+        # Si la clave ya existe
+        #if clave in resultado:
+       #     resultado[clave] += valor  # Suma los valores si la clave ya existe
+        #else:
+        #    resultado[clave] = valor  # Añade la nueva clave y su valor
     return resultado
 
 # Ejemplo de uso
